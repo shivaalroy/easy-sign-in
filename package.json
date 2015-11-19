@@ -1,10 +1,10 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.1.5",
-  "description": "A sample Node.js app using Express 4",
-  "main": "index.js",
+  "name": "easy-sign-in",
+  "version": "0.1",
+  "description": "An easy sign-in tool for tracking attendance",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "pg": "4.x",
@@ -12,16 +12,17 @@
     "express": "4.13.3"
   },
   "engines": {
-    "node": "0.12.7"
+    "node": "5.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/shivaalroy/easy-sign-in"
   },
   "keywords": [
     "node",
     "heroku",
     "express"
   ],
+  "author": "Shivaal Roy",
   "license": "MIT"
 }
