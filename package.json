@@ -1,6 +1,6 @@
 {
   "name": "easy-sign-in",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "An easy sign-in tool for tracking attendance",
   "main": "app.js",
   "scripts": {
