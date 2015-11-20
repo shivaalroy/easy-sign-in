@@ -11,16 +11,29 @@ body {
   margin: 0 auto;
 }
 
-.header {
+#loading-text {
   text-align: center;
-  margin: 10px 0;
+  margin: 30px 0;
+}
+
+#not-signed-in {
+  margin-top: 50%;
 }
 
 #signed-in {
   display: none;
+  margin-top: 20%;
 }
 
-#loading-text {
+.header {
   text-align: center;
-  margin: 30px 0;
+  margin: 10px 0 20px;
+}
+
+.btn-block {
+  margin: 10px 0;
+}
+
+#message {
+  text-align: center;
 }
