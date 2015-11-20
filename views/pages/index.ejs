@@ -3,21 +3,29 @@
 <head>
   <title>Sign In</title>
   <meta name="viewport" content="width=device-width">
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
   <script src="//apis.google.com/js/platform.js" async defer></script>
   <meta name="google-signin-client_id" content="99933221718-embqnahm6q0fiovnj7r1prv83flb1t1o.apps.googleusercontent.com">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
 </head>
 
 <body>
 
   <div class="container">
 
-      <h2 class="header">Sign in</h2>
-      <div id="g-sign-in-button" class="g-signin2" data-onsuccess="onSignIn"></div>
-      <button class="btn btn-block" onclick="signOut();">Sign out</button>
+    <!-- <h4 id="loading-text">loading...</h4> -->
+
+    <div id="not-signed-in">
+      <h3 class="header">Sign in</h3>
+      <div class="g-signin2" data-onsuccess="onSignIn" data-width="300" data-height="40" data-longtitle="true"></div>
+    </div>
+    <div id="signed-in">
+      <h5 class="header"></h5>
+      <button class="btn btn-danger btn-block" onclick="signOut();">Sign out</button>
+    </div>
 
   </div>
 
